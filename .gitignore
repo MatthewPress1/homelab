@@ -1,0 +1,28 @@
+# Secrets and certificates
+*.pem
+*.key
+*.p12
+*.pfx
+.env
+**/secrets/
+**/vault/
+
+# Ansible
+ansible/vault_pass.txt
+*.retry
+
+# Terraform state 
+terraform/.terraform/
+terraform/*.tfstate
+terraform/*.tfstate.backup
+terraform/.terraform.lock.hcl
+terraform/**/*.tfvars
+
+# OS and editor noise
+.DS_Store
+Thumbs.db
+*.swp
+*.swo
+*~
+.vscode/
+.idea/
