@@ -1,0 +1,23 @@
+$ORIGIN homelab.internal.
+$TTL 1d
+
+@	IN	SOA	openbsd.homelab.internal.	admin.homelab.internal. (
+			2026030401	; serial (YYYYMMDDNN)
+			1h		; refresh
+			30m		; retry
+			7d		; expire
+			5m )		; negative TTL
+
+@	IN	NS 	openbsd.homelab.internal.
+@	IN	MX	10	freebsd.homelab.internal.
+openbsd		IN	A	10.42.77.71
+freebsd		IN	A	10.42.77.72
+rocky		IN	A 	10.42.77.73
+ubuntu		IN	A	10.42.77.74
+almalinux	IN	A	10.42.77.75
+proxmox		IN	A	10.42.77.76
+k8s		IN	A	10.42.77.78
+
+www		IN	A	10.42.77.73
+www		IN	A	10.42.77.74
+

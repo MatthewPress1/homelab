@@ -1,0 +1,18 @@
+$ORIGIN 77.42.10.in-addr.arpa.
+$TTL 1d
+
+@       IN      SOA     openbsd.homelab.internal.       admin.homelab.internal. (
+                        2026030401      ; serial (YYYYMMDDNN)
+                        1h              ; refresh
+                        30m             ; retry
+                        7d              ; expire
+                        5m )            ; negative TTL
+
+@       IN      NS      openbsd.homelab.internal.
+71      IN      PTR     openbsd.homelab.internal. 
+72	IN      PTR	freebsd.homelab.internal.
+73	IN  	PTR	rocky.homelab.internal.
+74	IN	PTR	ubuntu.homelab.internal.
+75	IN	PTR	almalinux.homelab.internal.
+76	IN	PTR	proxmox.homelab.internal.
+78	IN	PTR	k8s.homelab.internal.
