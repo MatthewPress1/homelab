@@ -1,0 +1,13 @@
+# auth
+auth            sufficient      /usr/local/lib/pam_ldap.so              no_warn try_first_pass
+auth            required        pam_unix.so             no_warn try_first_pass
+
+# account
+account         sufficient      /usr/local/lib/pam_ldap.so
+account         required        pam_unix.so
+
+# session
+session         required        pam_permit.so
+
+# password
+password        required        pam_unix.so             no_warn try_first_pass
